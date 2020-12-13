@@ -8,8 +8,8 @@ namespace JobApplicationAPI.ModelDTOs
         public string FullName { get; set; }
         public string Contact { get; set; }
         public string Email { get; set; }
-        public ExperienceLevel ExperienceLevel { get; set; }
-        public JobCategory JobCategory { get; set; }
+        public string ExperienceLevel { get; set; }
+        public string JobCategory { get; set; }
 
     }
 }

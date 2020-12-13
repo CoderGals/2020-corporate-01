@@ -13,8 +13,8 @@ namespace JobApplicationAPI.Common.Convertors
                 FullName = user.FirstName.Trim() + " " + user.LastName.Trim(),
                 Contact = user.Contact,
                 Email = user.Email,
-                ExperienceLevel = user.ExperienceLevel,
-                JobCategory = user.JobCategory
+                ExperienceLevel = user.ExperienceLevel.ToString(),
+                JobCategory = user.JobCategory.ToString()
             };
         }
 
@@ -51,7 +51,7 @@ namespace JobApplicationAPI.Common.Convertors
                 CompanyName = job.CompanyName,
                 JobDescription = job.JobDescription,
                 Contact = job.Contact,
-                Category = job.Category,
+                Category = job.Category.ToString(),
                 Salary = job.Salary,
                 Employer = job.User.ConvertToViewUserDTO(),
             };

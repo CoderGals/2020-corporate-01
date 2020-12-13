@@ -9,7 +9,7 @@ namespace JobApplicationAPI.ModelDTOs
         public ViewUserDTO Employer { get; set; }
         public string JobDescription { get; set; }
         public string Contact { get; set; }
-        public JobCategory Category { get; set; }
+        public string Category { get; set; }
         public int Salary { get; set; }
     }
 }
