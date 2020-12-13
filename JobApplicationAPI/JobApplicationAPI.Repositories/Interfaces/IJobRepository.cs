@@ -7,5 +7,6 @@ namespace JobApplicationAPI.Repositories.Interfaces
     {
         List<Job> GetAll();
         Job GetJobById(int id);
+        void AddJob(Job job);
     }
 }

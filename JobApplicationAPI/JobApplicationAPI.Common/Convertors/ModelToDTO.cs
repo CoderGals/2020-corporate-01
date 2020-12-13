@@ -39,7 +39,8 @@ namespace JobApplicationAPI.Common.Convertors
                 Id = user.Id,
                 FullName = user.FirstName.Trim() + " " + user.LastName.Trim(),
                 Email = user.Email,
-                BirthDate = user.BirthDate.ToString()
+                BirthDate = user.BirthDate.ToString(),
+                Role = user.Role.ToString()
             };
         }
 

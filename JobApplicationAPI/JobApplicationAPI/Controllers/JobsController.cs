@@ -1,6 +1,7 @@
 ﻿using JobApplicationAPI.Common.Exceptions;
 using JobApplicationAPI.ModelDTOs;
 using JobApplicationAPI.Services.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JobApplicationAPI.Controllers
@@ -48,6 +49,23 @@ namespace JobApplicationAPI.Controllers
             {
                 return NotFound(ex.Message);
             }
+        }
+
+        
+        // api/job/userId
+        [HttpPost]
+        public IActionResult Job(int userId, JobDTO jobDTO)
+        {
+            try
+            {
+                _jobService.CreateJob(userId, jobDTO);
+                return Ok();
+            }
+            catch (FlowException ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+
         }
     }
 }

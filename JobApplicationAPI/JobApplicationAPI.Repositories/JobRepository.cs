@@ -16,6 +16,12 @@ namespace JobApplicationAPI.Repositories
             _context = context;
         }
 
+        public void AddJob(Job job)
+        {
+            _context.Jobs.Add(job);
+            _context.SaveChanges();
+        }
+
         public List<Job> GetAll()
         {
             return _context.Jobs

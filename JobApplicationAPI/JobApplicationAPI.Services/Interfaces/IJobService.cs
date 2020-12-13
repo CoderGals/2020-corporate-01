@@ -7,5 +7,6 @@ namespace JobApplicationAPI.Services.Interfaces
     {
         List<JobDTO> GetAll();
         JobDTO GetJobById(int id);
+        void CreateJob(int userId, JobDTO jobDTO);
     }
 }
