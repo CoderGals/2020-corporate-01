@@ -1,0 +1,1 @@
+export const BASE_URL='https://insurance-app-back-end.herokuapp.com'
