@@ -18,5 +18,6 @@ namespace JobApplicationAPI.ModelDTOs
         public string CompanyName { get; set; }
         public JobCategory JobCategory { get; set; }
         public ExperienceLevel ExperienceLevel { get; set; }
+        //job position
     }
 }
