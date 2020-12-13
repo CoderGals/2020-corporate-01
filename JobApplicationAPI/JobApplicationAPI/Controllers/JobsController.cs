@@ -52,7 +52,7 @@ namespace JobApplicationAPI.Controllers
         }
 
         
-        // api/job/userId
+        // api/job
         [HttpPost]
         public IActionResult Job(int userId, JobDTO jobDTO)
         {

@@ -52,7 +52,7 @@ namespace JobApplicationAPI.Common.Convertors
                 CompanyName = job.CompanyName,
                 JobDescription = job.JobDescription,
                 Contact = job.Contact,
-                Category = job.Category.ToString(),
+                Category = job.Category,
                 Salary = job.Salary,
                 Employer = job.User.ConvertToViewUserDTO(),
             };

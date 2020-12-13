@@ -29,6 +29,7 @@ namespace JobApplicationAPI.Controllers
             _configuration = configuration;
         }
 
+        // api/auth/login
         [HttpPost]
         public async Task<IActionResult> Login([FromBody] LoginDTO loginDTO)
         {
